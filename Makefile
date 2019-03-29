@@ -11,7 +11,15 @@ PKGS = $(shell ${GO-LIST} ./...)
 # target name label
 TARGET-NAME = " ---> [$@]"
 
-all: tests
+help:
+	@echo 'Usage: make <TARGETS> ... <OPTIONS>'
+	@echo ''
+	@echo 'Available targets are:'
+	@echo ''
+	@echo '    fmt      	run go fmt'
+	@echo '    vet      	run go vet'
+	@echo '    tests    	run go tests'
+	@echo ''
 
 fmt:
 	@echo ${TARGET-NAME}
