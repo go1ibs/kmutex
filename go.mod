@@ -1,4 +1,4 @@
-module gitlab.com/go1ibs/kmutex
+module github.com/go1ibs/kmutex
 
 go 1.12
 
